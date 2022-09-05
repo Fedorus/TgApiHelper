@@ -1,0 +1,58 @@
+[
+  {
+    "Short" : "Examples for Telegram.Bot",
+    "Text" : "Look for examples in this repo:\nhttps://github.com/TelegramBots/Telegram.Bot.Examples"
+  },
+  {
+    "Short" : "Telegram Bot API",
+    "Text" : "You can look this in official API:\nhttps://core.telegram.org/bots/api"
+  },
+  {
+    "Short" : "Library Guide",
+    "Text" : "This should be in official library book:\nhttps://telegrambots.github.io/book/"
+  },
+  {
+    "Short" : "General Telegram bots guide",
+    "Text" : "First you should read about bots:\nhttps://core.telegram.org/bots"
+  },
+  {
+    "Short" : "Polling",
+    "Text" : "Check this out: https://github.com/TelegramBots/Telegram.Bot.Extensions.Polling"
+  },
+  {
+    "Short" : "Huge webhook guide",
+    "Text" : "Check out this huge webhook guide: \nhttps://core.telegram.org/bots/webhooks"
+  },
+  {
+    "Short" : "Webhook status link",
+    "Text" : "https://api.telegram.org/bot<token>/getWebhookInfo"
+  },
+  {
+    "Short" : "SSL/TLS Error",
+    "Text" : "https://github.com/TelegramBots/Telegram.Bot/issues/867"
+  },
+  {
+    "Short" : "Telegram limits",
+    "Text" : "https://limits.tginfo.me/en"
+  },
+  {
+    "Short" : "Serialization issue",
+    "Text" : "https://telegrambots.github.io/book/FAQ.html#i-have-serialization-issues-or-null-values-in-update-object-in-my-webhook-what-do-i-do"
+  },
+  {
+    "Short" : "New bot framework",
+    "Text" : "\"like, subscribe, put a bell on it:\"\nhttps://github.com/TgBotFramework"
+  },
+  {
+    "Short" : "Examples for new bot framework",
+    "Text" : "Start with: https://github.com/TgBotFramework/TgBotFramework.Examples/blob/master/SimpleConsole/Program.cs"
+  },
+  {
+    "Short" : "Telegram Client Library",
+    "Text" : "If you need a Telegram Client API library in .NET, check out this group: (links in the pinned message): https://t.me/WTelegramClient"
+  },
+  {
+    "Short" : "Debug bot API",
+    "Text" : "(.Net 6.0, C#10 and vs2022 or Rider2021.3 required)\nJust download, put your token and launch. In console you'll see all data that telegram sends you. https://github.com/TgBotFramework/TgBotFramework.Examples/tree/master/TelegramApiDebug"
+  }
+]

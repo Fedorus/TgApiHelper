@@ -1,0 +1,11 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.idea/
+/*/.idea/
+/.vs/MyTelegramBots/DesignTimeBuild/.dtbcache.v2
+/.vs/MyTelegramBots/v16/.suo
+/*/*.csproj.user
+appsettings.json
