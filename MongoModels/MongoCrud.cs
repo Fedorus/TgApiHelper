@@ -7,11 +7,11 @@ using MongoDB.Driver;
 
 namespace TelegramFaqBotHost.MongoModels
 {
-    public class MongoCrud<T> where T : MongoItem
+    public class MongoCrud1<T> where T : MongoItem
     {
         private IMongoCollection<T> _client;
 
-        public MongoCrud(IOptions<MongoSettings> options)
+        public MongoCrud1(IOptions<MongoSettings> options)
         {
             _client = new MongoClient(options.Value.ConnectionString).GetDatabase(options.Value.DatabaseName).GetCollection<T>(typeof(T).Name);
         }

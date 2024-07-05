@@ -2,7 +2,7 @@ using TelegramFaqBotHost.MongoModels;
 
 namespace TelegramFaqBotHost.TelegramFaq
 {
-    public class Shortcut : MongoItem
+    public class Shortcut 
     {
         public string Short { get; set; }
         public string Text { get; set; }

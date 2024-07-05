@@ -38,7 +38,6 @@ namespace TelegramFaqBotHost
             services.AddSingleton<TextEcho>();
             services.AddSingleton<CommandsHandler>();
             services.AddScoped<ExceptionCatcher<TelegramFaqBot>>();
-            services.AddSingleton<MongoCrud<Shortcut>>();
             services.AddSingleton<DocAnchors>();
             services.AddScoped<InlineQueryHandler>();
             services.AddScoped<LeaveChatHandler>();
@@ -64,14 +63,13 @@ namespace TelegramFaqBotHost
                 app.UseDeveloperExceptionPage();
             }
 
-            var shortcuts =  app.ApplicationServices.GetService<MongoCrud<Shortcut>>();
-            if (shortcuts != null && shortcuts.CountAsync().GetAwaiter().GetResult() == 0 && File.Exists("TelegramFaq/Shortcuts.json"))
+            if (Data.Shortcuts != null && Data.Shortcuts.Count == 0 && File.Exists("TelegramFaq/Shortcuts.json"))
             {
                 var list = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Shortcut>>(
                     File.ReadAllText("TelegramFaq/Shortcuts.json"));
                 foreach (var shortcut in list)
                 {
-                    shortcuts.InsertAsync(shortcut).GetAwaiter().GetResult();
+                    Data.Shortcuts.Add(shortcut);
                 }
             }
 
